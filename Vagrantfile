@@ -1,6 +1,7 @@
 Vagrant.configure("2") do |config|
 
 config.vm.provision "shell",path:"backup_script.sh"
+config.vm.provision "shell",path:"lab1_p1.sh"
 
   config.vm.define "box1" do |box1|
 
@@ -22,7 +23,6 @@ config.vm.provision "shell",path:"backup_script.sh"
                  #sudo apt-get install -y nginx
 
                  #SHELL
-
 
          box2.vm.box="puphpet/ubuntu1404-x64" 
 
