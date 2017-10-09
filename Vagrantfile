@@ -2,6 +2,7 @@ Vagrant.configure("2") do |config|
 
 config.vm.provision "shell",path:"backup_script.sh"
 config.vm.provision "shell",path:"lab1_p1.sh"
+config.vm.provision "shell",path:"lab2_p2.sh"
 
   config.vm.define "box1" do |box1|
 
