@@ -2,7 +2,7 @@
 echo "Give me a user"
 read user
 if id "$user" >/dev/null 2>&1; then
-		echo -e 'htc\nhtc" | passwd "$user"
+		echo -e 'htc\nhtc" \ passwd "$user"
 	else
 		echo "user does not exist"
 fi
